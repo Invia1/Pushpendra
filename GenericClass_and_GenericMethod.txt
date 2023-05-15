@@ -1,0 +1,101 @@
+using System;
+class personDetails<T>
+{
+    public void skills(T temp)
+    {
+       Console.WriteLine(temp);
+    }
+}
+
+class HR
+{
+    public static void Main()
+    {
+       
+
+
+          personDetails<string> obj1=new personDetails<string>();
+          obj1.skills("database");
+
+          personDetails<int> obj2=new personDetails<int>();
+          obj2.skills(5);
+
+
+
+    }
+}
+==========================================================================
+class home
+{
+    public void mother<T>(T temp)
+    {
+        Console.WriteLine(temp);
+    }
+}
+
+class child1
+{
+    public static void Main()
+    {
+         home obj=new home();
+         obj.mother<int>(2);
+         obj.mother<string>("poha");
+    }
+}
+=============================================================================
+using System;
+using System.Collections.Generic;
+
+class personDetails
+{
+    List<string> objList=new List<string>();
+    public void Entry()
+    {
+       objList.Add("deepti");
+       objList.Add("noida");
+
+
+       foreach(var ctr in objList)
+       {
+           Console.WriteLine(ctr);
+       }
+    }
+}
+
+class user
+{
+    public static void Main()
+    {
+       personDetails obj=new personDetails();
+       obj.Entry();
+    }
+}
+==============================================================================
+using System;
+using System.Collections.Generic;
+
+class personDetails
+{
+    List<string> objList=new List<string>();
+    public void Entry()
+    {
+       objList.Add("deepti");
+       objList.Add("noida");
+
+
+       foreach(var ctr in objList)
+       {
+           Console.WriteLine(ctr);
+       }
+    }
+}
+
+class user
+{
+    public static void Main()
+    {
+       personDetails obj=new personDetails();
+       obj.Entry();
+    }
+}
+====================================
